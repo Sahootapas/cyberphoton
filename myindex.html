@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register Form</title>
+  <style>
+    body {
+      background: #f1f1f1;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+
+    .form-container h2 {
+      text-align: left;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px 10px 10px 40px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .input-group i {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      color: #555;
+    }
+
+    .register-btn {
+      width: 100%;
+      background: #2196F3;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .register-btn:hover {
+      background: #1976D2;
+    }
+
+    i.fa {
+      font-family: FontAwesome;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Register Form</h2>
+    <form>
+      <div class="input-group">
+        <i class="fa fa-user"></i>
+        <input type="text" placeholder="Username" required>
+      </div>
+      <div class="input-group">
+        <i class="fa fa-envelope"></i>
+        <input type="email" placeholder="Email" required>
+      </div>
+      <div class="input-group">
+        <i class="fa fa-lock"></i>
+        <input type="password" placeholder="Password" required>
+      </div>
+      <button type="submit" class="register-btn">Register</button>
+    </form>
+  </div>
+</body>
+</html>
